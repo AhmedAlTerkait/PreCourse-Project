@@ -19,7 +19,13 @@
  * sumOdds([3, 7, 8, 15, 2, 1, 13]) -> 39
  */
 function sumOdds(numbers) {
-  // Your code here
+  let sumOddNumbers = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 1) {
+      sumOddNumbers = sumOddNumbers + numbers[i];
+    }
+  }
+  return sumOddNumbers;
 }
 
 /**
@@ -35,7 +41,7 @@ function sumOdds(numbers) {
  * Hint: Use string methods to make it case-insensitive
  */
 function characterCount(string, c) {
-  // Your code here
+  console.log(c);
 }
 
 /**
